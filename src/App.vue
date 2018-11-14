@@ -1,28 +1,53 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Gallery />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Gallery from "./components/Gallery.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Gallery
   }
 };
 </script>
 
 <style>
+/* @font-face {
+  font-family: "Avant Garde";
+  src: url("/assets/fonts/366DB7_0_0.woff2") format("woff2"),
+    url("/assets/fonts/366DB7_0_0.eot") format("embedded-opentype"),
+    url("/assets/fonts/366DB7_0_0.woff") format("woff"),
+    url("/assets/fonts/366DB7_0_0.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avant Garde";
+  src: url("/assets/fonts/366DB9_0_0.woff2") format("woff2"),
+    url("/assets/fonts/366DB9_0_0.eot") format("embedded-opentype"),
+    url("/assets/fonts/366DB9_0_0.woff") format("woff"),
+    url("/assets/fonts/366DB9_0_0.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+} */
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Avant Garde", "Avenir", Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #e2e2e2;
+}
+body {
+  margin: 0px;
+  padding: 30px;
+  background-color: #e2e2e2;
+}
+@media (max-width: 768px) {
+  .blueimp-gallery > .next,
+  .blueimp-gallery > .prev {
+    top: 90%;
+  }
 }
 </style>
