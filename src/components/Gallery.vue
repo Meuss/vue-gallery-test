@@ -205,7 +205,7 @@ export default {
   margin: 10px;
   .dl-link {
     display: inline-block;
-    padding: 5px 20px;
+    padding: 10px 20px 5px;
     svg {
       width: 20px;
       height: 20px;
@@ -213,7 +213,10 @@ export default {
     }
     &:hover {
       svg {
-        transform: scale(1.1);
+        // transform: scale(1.1);
+        path {
+          fill: #4e8aaa;
+        }
       }
     }
   }
@@ -264,6 +267,11 @@ export default {
     height: auto;
     svg {
       opacity: 1;
+      transform: none;
+      left: auto;
+      top: auto;
+      bottom: 20px;
+      right: 20px;
     }
   }
 }
